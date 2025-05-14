@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Plata - pagos y facturas</title>
+    <link rel="stylesheet" href="css/payments.css">
+    <link rel="stylesheet" href="css/transactions.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="back-button">
+                <i class="fas fa-chevron-left"></i>
+                <span>Volver</span>
+            </div>
+            <div class="logo">
+                <!-- Aquí va el logo de tu aplicación -->
+                <img src="/assents/logo.jpg" alt="Logo">
+            </div>
+        </header>
+
+        <section class="user-info">
+            <h2>Facturas y recargas</h2>
+            <h1>Pagar y administrar facturas</h1>
+        </section>
+
+        <div class="info-payments">
+            <section class="balance-info">
+            <p>Saldo disponible</p>
+            <span class="balance">$ 53.694,95</span>
+            </section>
+
+        <button class="new-payment">Pagar nueva factura </button>
+        
+
+        <div class="form-container">
+            <section class="section-form">
+                <form id="Form">
+                    <label for="paymentType">Tipo de Pago:</label>
+                    <select id="paymentType" name="paymentType">
+                        <option value="electricity">Electricidad</option>
+                        <option value="water">Agua</option>
+                        <option value="internet">Internet</option>
+                        <option value="phone">Teléfono</option>
+                        <option value="creditCard">Tarjeta de Crédito</option>
+                    </select>
+
+                    <label for="amount">Monto a Pagar:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Ingrese el monto">
+
+                    <label for="recipient">Referencia o Factura:</label>
+                    <input type="text" id="recipient" name="recipient" placeholder="Ingrese referencia o factura">
+
+                    <div class="buttons-container">
+                        <button  class="button" type="submit">Enviar</button>
+                        <button  class="button" type="button" id="cancelButton">Cancelar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <section class="list">
+            <h2>Pagos Anteriores</h2>
+            <div class="item">
+                <div class="details">
+                    <p class="date">30 APR 2025</p>
+                    <p class="description">IMPTO GOBIERNO 4X1000</p>
+                </div>
+                <p class="amount">$ 40,00</p>
+            </div>
+        </section>
+    </div>
+
+        <footer>
+            <p>¿Necesita ayuda? Contáctenos.</p>
+        </footer>
+    </div>
+</body>
+</html>

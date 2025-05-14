@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ahorro a la Mano - Perfil</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/dashboard-profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="profile-page">
+            <div class="logo">
+                <img src="/assents/logo.jpg" alt="Logo Ahorro a la Mano">
+            </div>
+            <div class="profile-info">
+                <h1>Mi perfil</h1>
+                <div class="name-id">
+                    <h2 id="name-profile">usuario</h2>
+                    <p>Id: <span id="id-profile"></span></p>
+                </div>
+                <h3 class="data"> Datos Personales</h3>
+                <div class="profile-details">
+                    <p><strong>Nombre:</strong> <span id="profile-name"></span></p>
+                    <p><strong>Correo:</strong> <span id="profile-email"></span></p>
+                    <p><strong>Teléfono:</strong> <span id="profile-phone"></span></p>
+                </div>
+            </div>
+                <div class="actions-profile">
+                    <button id="edit-profile">Editar perfil</button>
+                    <button id="change-password">Cambiar contraseña</button>
+                    <button class="logout">Cerrar sesion</button>
+                </div>
+        </div>
+        <!-- Modal para Editar Perfil -->
+        <div id="editProfileModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Editar Perfil</h2>
+                <form id="editProfileForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal para Cambiar Contraseña -->
+        <div id="changePasswordModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Cambiar Contraseña</h2>
+                <form id="changePasswordForm">
+                    <label for="currentPassword">Contraseña Actual:</label>
+                    <input type="password" id="currentPassword" name="currentPassword">
+
+                    <label for="newPassword">Nueva Contraseña:</label>
+                    <input type="password" id="newPassword" name="newPassword">
+
+                    <label for="confirmPassword">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+
+                    <button type="submit">Cambiar Contraseña</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <nav>
+                    <a href="dashboard.html" class="nav-item">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Inicio</span>
+                    </a>
+                    <a href="movements.html" class="nav-item">
+                        <i class="fa-solid fa-box-archive"></i>
+                        <span>Mis productos</span>
+                    </a>
+                    <div class="nav-item money">
+                        <div class="money-actions">
+                            <a href="withdrawals.html">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                                <div>
+                                    <span>Retirar Plata  > </span>
+                                    <p>Generar codigo de retiro</p>
+                                </div>
+                            </a>
+                            <a href="shipment.html">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <div><span>Enviar Plata  > </span></div>
+                            </a>
+                            <a href="extract.html">
+                                <i class="fa-solid fa-globe"></i>
+                                <div>
+                                    <span>Generar extracto  > </span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                <div>
+                                    <span>Transfiya > </span>
+                                    <p>Envía y recibe dinero de otros bancos</p>
+                                </div>
+                            </a>
+                            <a href="interesCalculator.html">
+                                <i class="fa-solid fa-globe"></i>
+                                <div>
+                                    <span>Calcular interes > </span>
+                                </div>
+                            </a>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <span>Mover plata</span>
+                    </div>
+                    <div class="nav-item">
+                        <div class="bills-actions">
+                            <a href="payments.html">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                                <div>
+                                    <span>Pagar y administrar facturas   </span>
+                                </div>
+                            </a>
+                            <a href="refills.html">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div><span>Recargas   </span></div>
+                            </a>
+                        </div>
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <span>Facturas y recargas</span>
+                    </div>
+                    <div class="nav-item active" id="profile-nav">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Mi perfil</span> 
+                    </div>
+            </nav>
+        </footer>
+    </div>
+    </div>
+
+<script src="/js/UI/profile.js" type="module"></script>
+</body>
+</html>

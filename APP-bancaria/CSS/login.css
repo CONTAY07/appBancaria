@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+button.primary {
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.primary:hover {
+    background-color: #ffca2b;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.fingerprint {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fingerprint img {
+    width: 60px;
+    margin-bottom: 5px;
+}

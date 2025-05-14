@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/CSS/interest.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Plata - Interes</title>
+    <link rel="stylesheet" href="css/transactions.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="back-button">
+                <i class="fas fa-chevron-left"></i>
+                <span>Volver</span>
+            </div>
+            <div class="logo">
+                <!-- Aquí va el logo de tu aplicación -->
+                <img src="/assents/logo.jpg" alt="Logo">
+            </div>
+        </header>
+
+        <section class="user-info">
+            <h2>Mover Plata</h2>
+            <h1>Calcular interes</h1>
+        </section>
+        
+
+        <div class="form-container">
+            <section class="section-from">
+                <form id="Form">
+
+                    <label for="number">cúanto tiempo deseas calcular :</label>
+                    <input type="number" id="number" name="number" placeholder="Ingrese el tiempo en dias">
+
+                    <button class="submit" type="submit">Calcular interes </button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <div class="result-container">
+    <div class="result-card">
+        <h3>Resultado del Cálculo</h3>
+        <div class="result-details">
+            <p>Tiempo (días): <span id="result-time"></span></p>
+            <p>Interés Ganado: <span id="result-interest"></span></p>
+            <p>Total con Interés: <span id="result-total"></span></p>
+        </div>
+        <button id="reset-button">Calcular de Nuevo</button>
+    </div>
+   </div>
+
+        <footer>
+            <p>¿Necesita ayuda? Contáctenos.</p>
+        </footer>
+    </div>
+</body>
+</html>
