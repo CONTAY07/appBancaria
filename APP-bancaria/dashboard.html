@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorro a la Mano - Dashboard</title>
+    <!-- Estilos principales y de la página de perfil -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/dashboard-profile.css">
+    <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
         <div class="home-page">
+            <!-- Cabecera con ayuda, logo y botón de cerrar sesión -->
             <header>
                 <div class="help">
                     <i class="fa-solid fa-circle-question"></i>
                     <span>Ayuda</span>
                 </div>
                 <div class="logo">
-                    <img src="/assents/logo.jpg" alt="Logo Ahorro a la Mano">
+                    <img src="/APP-bancaria/assents/logo.jpg" alt="Logo Ahorro a la Mano">
                 </div>
                 <div class="logout">
                     <span>Cerrar sesión</span>
@@ -25,6 +28,7 @@
                 </div>
             </header>
             <div class="information">
+                <!-- Información del usuario y cuenta -->
                 <section class="user-info">
                     <h1>Hola, <span id="user-name"></span></h1>
                     <p>Tu Bancolombia A la mano es:</p>
@@ -44,6 +48,7 @@
                     </section>
                 </div>
             </div>
+            <!-- Acciones principales del usuario -->
             <section class="actions">
                 <h2>¿Qué quieres hacer hoy?</h2>
                 <div class="actions-grid">
@@ -78,77 +83,81 @@
                 </div>
             </section>
         </div>
+        <!-- Navegación inferior tipo app móvil -->
         <footer>
             <nav>
-                    <a href="dashboard.html" class="active nav-item">
-                        <i class="fa-solid fa-house"></i>
-                        <span>Inicio</span>
-                    </a>
-                    <a href="movements.html" class="nav-item">
-                        <i class="fa-solid fa-box-archive"></i>
-                        <span>Mis productos</span>
-                    </a>
-                    <div class="nav-item money">
-                        <div class="money-actions">
-                            <a href="withdrawals.html">
-                                <i class="fa-solid fa-hand-holding-dollar"></i>
-                                <div>
-                                    <span>Retirar Plata  > </span>
-                                    <p>Generar codigo de retiro</p>
-                                </div>
-                            </a>
-                            <a href="shipment.html">
-                                <i class="fa-solid fa-paper-plane"></i>
-                                <div><span>Enviar Plata  > </span></div>
-                            </a>
-                            <a href="interesCalculator.html">
-                                <i class="fa-solid fa-globe"></i>
-                                <div>
-                                    <span>calcular interes  > </span>
-                                    <p>Generar código para tus pagos</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                                <div>
-                                    <span>Transfiya > </span>
-                                    <p>Envía y recibe dinero de otros bancos</p>
-                                </div>
-                            </a>
-                            <a href="extract.html">
-                                <i class="fa-solid fa-globe"></i>
-                                <div>
-                                    <span>Generar extracto > </span>
-                                </div>
-                            </a>
-                        </div>
-                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        <span>Mover plata</span>
+                <a href="dashboard.html" class="active nav-item">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Inicio</span>
+                </a>
+                <a href="movements.html" class="nav-item">
+                    <i class="fa-solid fa-box-archive"></i>
+                    <span>Mis productos</span>
+                </a>
+                <!-- Menú desplegable para mover dinero -->
+                <div class="nav-item money">
+                    <div class="money-actions">
+                        <a href="withdrawals.html">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <div>
+                                <span>Retirar Plata  > </span>
+                                <p>Generar codigo de retiro</p>
+                            </div>
+                        </a>
+                        <a href="shipment.html">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <div><span>Enviar Plata  > </span></div>
+                        </a>
+                        <a href="interesCalculator.html">
+                            <i class="fa-solid fa-globe"></i>
+                            <div>
+                                <span>calcular interes  > </span>
+                                <p>Generar código para tus pagos</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <div>
+                                <span>Transfiya > </span>
+                                <p>Envía y recibe dinero de otros bancos</p>
+                            </div>
+                        </a>
+                        <a href="extract.html">
+                            <i class="fa-solid fa-globe"></i>
+                            <div>
+                                <span>Generar extracto > </span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="nav-item">
-                        <div class="bills-actions">
-                            <a href="payments.html">
-                                <i class="fa-solid fa-file-invoice-dollar"></i>
-                                <div>
-                                    <span>Pagar y administrar facturas   </span>
-                                </div>
-                            </a>
-                            <a href="refills.html">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                                <div><span>Recargas   </span></div>
-                            </a>
-                        </div>
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-                        <span>Facturas y recargas</span>
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <span>Mover plata</span>
+                </div>
+                <!-- Menú desplegable para facturas y recargas -->
+                <div class="nav-item">
+                    <div class="bills-actions">
+                        <a href="payments.html">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                            <div>
+                                <span>Pagar y administrar facturas   </span>
+                            </div>
+                        </a>
+                        <a href="refills.html">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div><span>Recargas   </span></div>
+                        </a>
                     </div>
-                    <a href="perfil.html" class="nav-item " id="profile-nav">
-                        <i class="fa-solid fa-user"></i>
-                        <span>Mi perfil</span> 
-                    </a>
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span>Facturas y recargas</span>
+                </div>
+                <a href="perfil.html" class="nav-item " id="profile-nav">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Mi perfil</span> 
+                </a>
             </nav>
         </footer>
     </div>
 
+    <!-- Script principal del dashboard -->
     <script src="js/ui/dashboard.js" type="module"></script>
 </body>
 </html>

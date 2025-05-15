@@ -12,7 +12,12 @@ export class Account {
     addTransaction(amount, type, description) {
         const transaction = new Transaction(amount, type, description);
         this.transactions.push(transaction);
-        this.balance += amount;
+        if(type === "Retiro") {
+            this.balance -= parseFloat(amount); // Disminuir el saldo de la cuenta
+        }
+        if(type === "Recarga") {
+            this.balance += parseFloat(amount); // Aumentar el saldo de la cuenta
+        }
         console.log(`Transacción de ${amount} (${type}) realizada. Nuevo saldo: ${this.balance}`);
     }
 

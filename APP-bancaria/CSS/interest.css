@@ -1,5 +1,5 @@
+/* Contenedor del resultado del cálculo de interés (modal centrado y oculto por defecto) */
 .result-container {
-    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -8,12 +8,13 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    z-index: 1000; /* Por encima de otros elementos */
     display: grid;
     place-items: center; /* Centra el contenido */
-    display: none;
+    display: none; /* Oculto por defecto */
 }
 
+/* Tarjeta de resultado */
 .result-card {
     background-color: #fff;
     border-radius: 15px;
@@ -22,11 +23,13 @@
     text-align: center;
 }
 
+/* Detalles del resultado */
 .result-details p {
     font-size: 1.1em;
     margin-bottom: 10px;
 }
 
+/* Botón para cerrar el resultado */
 #reset-button {
     background-color: #ffc107;
     color: #212529;
@@ -38,6 +41,7 @@
     transition: background-color 0.3s ease;
 }
 
+/* Efecto hover para el botón de cerrar */
 #reset-button:hover {
     background-color: #ffca2b;
 }

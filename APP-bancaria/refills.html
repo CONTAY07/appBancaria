@@ -4,71 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envio de Plata - Recargas</title>
+    <!-- Estilos principales y específicos de recargas -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/transactions.css">
     <link rel="stylesheet" href="css/payments.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    /* Estilo para mostrar el monto de recarga en verde */
+    .amount {
+        color: rgb(111, 207, 122);
+    }
+</style>
 <body>
     <div class="container">
         <header>
+            <!-- Botón para volver atrás -->
             <div class="back-button">
                 <i class="fas fa-chevron-left"></i>
                 <span>Volver</span>
             </div>
             <div class="logo">
                 <!-- Aquí va el logo de tu aplicación -->
-                <img src="/assents/logo.jpg" alt="Logo">
+                <img src="/APP-bancaria/assents/logo.jpg" alt="Logo">
             </div>
         </header>
 
+        <!-- Información de la sección -->
         <section class="user-info">
             <h2>Facturas y recargas</h2>
             <h1>Recargas</h1>
         </section>
 
         <div class="info-payments">
+            <!-- Muestra el saldo actual del usuario -->
             <section class="balance-info">
-            <p>Saldo Actual</p>
-            <span class="balance">$ 53.694,95</span>
-        </section>
+                <p>Saldo Actual</p>
+                <span class="balance"></span>
+            </section>
 
-        <button class="new-refill">Recargar saldo </button>
-        
+            <!-- Botón para mostrar el formulario de recarga -->
+            <button type="button" class="new-refill">Recargar saldo </button>
+            
+            <!-- Formulario para realizar una recarga -->
+            <div class="form-container">
+                <section class="section-form">
+                    <form id="Form">
+                        <label for="amount">Cantidad a recargar:</label>
+                        <input type="number" id="amount" name="amount" placeholder="Ingrese el monto">
 
-        <div class="form-container">
-            <section class="section-form">
-                <form id="Form">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" placeholder="Ingrese contraseña para validar identidad">
 
-                    <label for="amount">Cantidad a recargar:</label>
-                    <input type="number" id="amount" name="amount" placeholder="Ingrese el monto">
+                        <div class="buttons-container">
+                            <button class="button" type="submit" id="confirm-refill">Recargar</button>
+                            <button class="button" type="button" id="cancelButton">Cancelar</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
 
-                    <label for="recipient">Contraseña:</label>
-                    <input type="text" id="recipient" name="recipient" placeholder="Ingrese contraseña para validar identidad">
-
-                    <div class="buttons-container">
-                        <button class="button" type="submit">Recargar</button>
-                        <button class="button" type="button" id="cancelButton">Cancelar</button>
-                    </div>
-                </form>
+            <!-- Lista de recargas anteriores -->
+            <h2>recargas Anteriores</h2>
+            <section class="list">
+                <!-- Aquí se mostrarán las recargas previas dinámicamente -->
             </section>
         </div>
 
-        <section class="list">
-            <h2>recargas Anteriores</h2>
-            <div class="item">
-                <div class="details">
-                    <p class="date">30 APR 2025</p>
-                    <p class="description">IMPTO GOBIERNO 4X1000</p>
-                </div>
-                <p class="amount">$ 40,00</p>
-            </div>
-        </section>
-    </div>
-
+        <!-- Pie de página con información de contacto -->
         <footer>
             <p>¿Necesita ayuda? Contáctenos.</p>
         </footer>
     </div>
+    <!-- Script principal para la lógica de recargas -->
+    <script src="/APP-bancaria/js/UI/refills.js" type="module"></script>
 </body>
 </html>

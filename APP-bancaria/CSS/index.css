@@ -1,34 +1,40 @@
+/* Contenedor principal */
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centrar horizontalmente */
     justify-content: space-around;
     height: 100vh;
     text-align: center;
     padding: 20px;
 }
 
+/* Logo */
 .logo img {
-    width: 200px; /* Ajusta el tamaño según sea necesario */
+    width: 200px;
 }
 
+/* Encabezado */
 h1 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
+/* Párrafo */
 p {
     font-size: 1.1em;
     color: #666;
     margin-bottom: 20px;
 }
 
+/* Contenedor de botones */
 .buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Botones */
 .button {
     display: block;
     padding: 12px 24px;
@@ -36,24 +42,28 @@ p {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
-    width: 200px; /* Ancho fijo para los botones */
-    text-align: center; /* Centrar el texto */
+    width: 200px;
+    text-align: center;
 }
 
+/* Botón primario */
 .button.primary {
-    background-color: #ffc107; /* Amarillo principal */
+    background-color: #ffc107; /* Amarillo */
     color: #212529; /* Texto oscuro */
 }
 
+/* Botón de contorno */
 .button.outline {
     border: 2px solid #ccc;
     color: #555;
 }
 
+/* Hover botón primario */
 .button.primary:hover {
     background-color: #ffca2b;
 }
 
+/* Hover botón de contorno */
 .button.outline:hover {
     background-color: #f8f9fa;
 }

@@ -1,3 +1,4 @@
+/* Contenedor principal del registro */
 .container {
     display: flex;
     flex-direction: column;
@@ -5,15 +6,19 @@
     justify-content: center;
 }
 
+/* Logo */
 .logo img {
     width: 200px;
 }
 
+/* Título principal */
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
+/* Formulario de registro */
 form {
     width: 80%;
     max-width: 300px;
@@ -22,10 +27,7 @@ form {
     gap: 30px;
 }
 
-h1{
-    margin-top: 50px;
-}
-
+/* Campos de entrada */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -36,6 +38,7 @@ input[type="password"] {
     font-size: 1em;
 }
 
+/* Botón principal de registro */
 button.primary {
     padding: 12px;
     border: none;
@@ -47,10 +50,12 @@ button.primary {
     transition: background-color 0.3s ease;
 }
 
+/* Efecto hover para el botón principal */
 button.primary:hover {
     background-color: #ffca2b;
 }
 
+/* Espaciado para el texto debajo del formulario */
 p {
     margin-top: 20px;
 }

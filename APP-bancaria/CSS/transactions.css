@@ -1,11 +1,13 @@
 
+/* Header de la página de transacciones */
 header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
+/* Botón para volver atrás */
 header .back-button {
     display: flex;
     align-items: center;
@@ -14,6 +16,7 @@ header .back-button {
     cursor: pointer;
 }
 
+/* Logo centrado en el header */
 header .logo{
     position: absolute;
     left: 50%;
@@ -25,6 +28,7 @@ header .logo img {
     width: 200px; /* Ajusta el tamaño del logo */
 }
 
+/* Información del usuario */
 .user-info{
     margin: 70px 0 5px 0;
 }
@@ -41,6 +45,7 @@ header .logo img {
     margin-bottom: 5px;
 }
 
+/* Contenedor de información de retiros y pagos */
 .info-withdrawals, .info-payments{
     width: 390px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
@@ -48,6 +53,7 @@ header .logo img {
     margin: 0 auto;
 }
 
+/* Información de balance */
 .balance-info {
     display: flex;
     justify-content: space-between;
@@ -67,6 +73,7 @@ header .logo img {
     font-size: 1em;
 }
 
+/* Sección para mostrar el código de retiro */
 .withdrawal-code{
     width: 100%;
     height:300px;
@@ -80,6 +87,7 @@ header .logo img {
     margin-bottom: 20px;
 }
 
+/* Círculo para mostrar el código */
 .code-infromation{
     width: 150px;
     height: 150px;
@@ -101,7 +109,8 @@ header .logo img {
     color: #6c757d;
 }
 
-.code-container button[type="submit"]{
+/* Botón para copiar o usar el código */
+.code-container button[type="button"]{
     display: block;
     width: 100%;
     text-align: center;
@@ -121,8 +130,7 @@ header .logo img {
     opacity: 0.8;
 }
 
-
-/* Estilos para el formulario de retiro */
+/* Formulario de retiro */
 .section-from {
     margin: 20px auto;
     width: 90%; /* Ocupa todo el ancho disponible */
@@ -139,6 +147,7 @@ form {
     gap: 20px; /* Espacio entre los elementos del formulario */
 }
 
+/* Etiquetas del formulario */
 .section-form label {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -147,6 +156,7 @@ form {
     font-size: 0.9em; /* Tamaño de fuente más pequeño */
 }
 
+/* Campos de entrada y área de texto */
 input, textarea {
     padding: 10px;
     margin-bottom: 15px;
@@ -164,6 +174,7 @@ input, textarea {
     height: 80px; /* Altura fija para el textarea */
 }
 
+/* Botón de envío del formulario */
 .submit{
     display: block;
     width: 100%;
@@ -177,13 +188,13 @@ input, textarea {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
-    
 }
 
 .submit:hover {
     background-color: #ffca2b; /* Color amarillo al pasar el cursor */
 }
 
+/* Footer de la página */
 footer {
     text-align: center;
     padding: 20px;
@@ -191,12 +202,14 @@ footer {
     border-top: 1px solid #ddd;
 }
 
+/* Contenedor de pestañas para filtrar transacciones */
 .tabs {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
 
+/* Botones de las pestañas */
 .tabs button {
     padding: 10px 20px;
     border: none;
@@ -208,6 +221,7 @@ footer {
     transition: border-color 0.3s ease;
 }
 
+/* Botón activo de las pestañas */
 .tabs button.active {
     color:#6c757d;
     font-weight: bold;

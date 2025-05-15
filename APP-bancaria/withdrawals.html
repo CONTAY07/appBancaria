@@ -4,60 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retiro de Plata - Ahorro a la Mano</title>
+    <!-- Estilos principales y de la sección de retiros -->
     <link rel="stylesheet" href="css/transactions.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
         <header>
+            <!-- Botón para volver atrás -->
             <div class="back-button">
                 <i class="fas fa-chevron-left"></i>
                 <span>Volver</span>
             </div>
             <div class="logo">
-                <!-- Aquí va el logo de tu aplicación -->
-                <img src="/assents/logo.jpg" alt="Logo">
+                <!-- Logo de la aplicación -->
+                <img src="/APP-bancaria/assents/logo.jpg" alt="Logo">
             </div>
         </header>
 
+        <!-- Información de la sección -->
         <section class="user-info">
             <h2>Mover plata</h2>
             <h1>Retiro de Dinero</h1>
         </section>
 
         <div class="info-withdrawals">
+            <!-- Muestra el saldo disponible -->
             <section class="balance-info">
-            <p>Saldo disponible</p>
-            <span class="balance">$ 53.694,95</span>
-        </section>
+                <p>Saldo disponible</p>
+                <span class="balance"></span>
+            </section>
 
-        <section class="withdrawal-code">
-            <div class="code-container">
-                <p>Tu código de retiro es:</p>
-                <div class="code-infromation">
-                    <span class="code">********</span>
-                    <p>vence en: <span class="code-duration"></span></p>
-                    <div class="code-visibility"><i class="fa-solid fa-eye"></i></div>
+            <!-- Sección para mostrar el código de retiro generado -->
+            <section class="withdrawal-code">
+                <div class="code-container">
+                    <p>Tu código de retiro es:</p>
+                    <div class="code-infromation">
+                        <span class="code"></span>
+                        <p>vence en: 30:00></p>
+                        <div class="code-visibility"><i class="fa-solid fa-eye"></i></div>
+                    </div>
+                    <button type="button" class="submit" id="confirmation">Retiro realizado</button>
                 </div>
-                <button type="submit" class="submit" id="confirmation">Retiro echo</button>
-            </div>
-            
-        </section>
+            </section>
 
-        <section class="section-form">
-            <form id="Form">
-                <label for="amount">Monto a Retirar:</label>
-                <input type="number" id="amount" name="amount" placeholder="Ingrese el monto">
-
-                <button id="request" class="submit" type="submit">Retirar</button>
-            </form>
-        </section>
+            <!-- Formulario para solicitar el retiro -->
+            <section class="section-form">
+                <form id="form">
+                    <label for="amount">Monto a Retirar:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Ingrese el monto">
+                    <button id="request" class="submit" type="submit">Retirar</button>
+                </form>
+            </section>
         </div>
 
+        <!-- Pie de página con información de contacto -->
         <footer>
             <p>¿Necesita ayuda? Contáctenos.</p>
         </footer>
     </div>
+    <!-- Script principal para la lógica de retiros -->
+    <script src="/APP-bancaria/js/UI/withdrawals.js" type="module"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-
+/* Estilos para el header y botón de regreso */
 header {
     display: flex;
     justify-content: left;
@@ -15,10 +15,12 @@ header .back-button {
     cursor: pointer;
 }
 
+/* Logo en el header */
 header .logo img {
     width: 150px; /* Ajusta el tamaño del logo */
 }
 
+/* Información del usuario y detalles */
 .information {
     display: flex;
     justify-content: space-between;
@@ -26,9 +28,9 @@ header .logo img {
     margin-bottom: 20px;
     margin-top: 10px;
 }
-.user-info{
+
+.user-info {
     margin-top: -50px;
-    
 }
 
 .user-info h1 {
@@ -49,11 +51,11 @@ header .logo img {
     font-size: 1.1em;
 }
 
-
-.balace-movement{
+/* Sección de balance y movimientos */
+.balace-movement {
     margin-top: 40px;
 }
-.balace-movement p{
+.balace-movement p {
     color: #6c757d;
     margin: 0;
 }
@@ -71,7 +73,7 @@ header .logo img {
     color: #6c757d;
 }
 
-
+/* Tabs para filtrar movimientos */
 .tabs {
     display: flex;
     justify-content: space-between;
@@ -94,13 +96,14 @@ header .logo img {
     border-bottom-color: #343a40;
 }
 
-.movements-list {
+/* Lista de movimientos */
+.list {
     flex-grow: 1;
     overflow-y: auto;
     width: 400px;
 }
 
-.movement-item {
+.item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,29 +111,30 @@ header .logo img {
     border-bottom: 1px solid #ddd;
 }
 
-.movement-details p {
+.details p {
     margin: 0;
 }
 
-.movement-date {
+.date {
     font-size: 0.9em;
     color: #6c757d;
     margin-bottom: 5px;
 }
 
-.movement-description {
+.description {
     font-size: 1.1em;
 }
 
-.movement-amount {
+.amount {
     font-size: 1.2em;
     font-weight: bold;
 }
 
-.movement-amount.negative {
+.amount.negative {
     color: red;
 }
 
+/* Footer con navegación */
 footer {
     display: flex;
     justify-content: space-around;

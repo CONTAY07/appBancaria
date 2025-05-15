@@ -3,49 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envio de Plata - Recargas</title>
+    <title>Generar extracto</title>
+    <!-- Estilos principales y de la sección de transacciones -->
     <link rel="stylesheet" href="css/transactions.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    /* Puedes poner esto en css/transactions.css o en extract.html dentro de <style> */
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.modal-content {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#extract-list {
+    padding-left: 0;
+    list-style: none;
+}
+</style>
 <body>
     <div class="container">
         <header>
+            <!-- Botón para volver atrás -->
             <div class="back-button">
                 <i class="fas fa-chevron-left"></i>
                 <span>Volver</span>
             </div>
             <div class="logo">
-                <!-- Aquí va el logo de tu aplicación -->
-                <img src="/assents/logo.jpg" alt="Logo">
+                <!-- Logo de la aplicación -->
+                <img src="/APP-bancaria/assents/logo.jpg" alt="Logo">
             </div>
         </header>
 
+        <!-- Información de la sección -->
         <section class="user-info">
             <h2>Mover Plata</h2>
             <h1>Generar extracto</h1>
         </section>
         
-
+        <!-- Formulario para seleccionar el periodo del extracto -->
         <div class="form-container">
             <section class="section-from">
-                <form id="Form">
-
+                <form id="form">
                     <label for="date">Periodo de tiempo inicial :</label>
-                    <input type="date" id="date" name="date">
+                    <input type="date" id="date-start" name="date">
 
                     <label for="date-final">Periodo de tiempo final:</label>
-                    <input type="date" id="date-final" name="date-final">
+                    <input type="date" id="date-end" name="date-final">
 
                     <button class="submit" type="submit">Generar extracto </button>
                 </form>
             </section>
         </div>
     </div>
-
-        <footer>
-            <p>¿Necesita ayuda? Contáctenos.</p>
-        </footer>
+    <div id="extract-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Extracto de movimientos</h2>
+            <ul id="extract-list"></ul>
+        </div>
     </div>
+    <footer>
+        <p>¿Necesita ayuda? Contáctenos.</p>
+    </footer>
+    <script src="/APP-bancaria/js/UI/extract.js" type="module"></script>
 </body>
 </html>

@@ -1,62 +1,58 @@
+/* Contenedor principal del login */
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
 }
 
+/* Logo */
 .logo img {
     width: 200px;
 }
 
+/* Título principal */
 h1 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
+/* Formulario de login */
 form {
     width: 80%;
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px; /* Espacio entre campos */
 }
 
+/* Campos de entrada de email y contraseña */
 input[type="email"],
 input[type="password"] {
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 30px;
+    border-radius: 30px; /* Bordes redondeados */
     font-size: 1em;
 }
 
+/* Botón principal de login */
 button.primary {
     padding: 12px;
     border: none;
     border-radius: 30px;
-    background-color: #ffc107;
-    color: #212529;
+    background-color: #ffc107; /* Amarillo */
+    color: #212529; /* Texto oscuro */
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+/* Efecto hover para el botón principal */
 button.primary:hover {
     background-color: #ffca2b;
 }
 
+/* Espaciado para el texto debajo del formulario */
 p {
     margin-top: 20px;
-}
-
-.fingerprint {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fingerprint img {
-    width: 60px;
-    margin-bottom: 5px;
 }

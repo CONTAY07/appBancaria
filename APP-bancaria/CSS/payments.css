@@ -1,3 +1,4 @@
+/* Botón para nuevo pago y recarga */
 .new-payment, .new-refill{
     width: 100%;
     text-align: left;
@@ -14,6 +15,7 @@
     margin-bottom: 30px;
 }
 
+/* Icono "+" en los botones */
 .new-payment::before, .new-refill::before{
     content: "+";
     position: absolute;
@@ -24,11 +26,12 @@
     transform: translate(-50%, -50%);
 }
 
+/* Contenedor del formulario oculto por defecto */
 .form-container{
     display: none;
 }
 
-/* Estilos para el select */
+/* Estilos para el select de opciones */
 select {
     width: 100%;
     padding: 10px;
@@ -39,24 +42,25 @@ select {
     color: #495057;
     background-color: #fff;
     appearance: none; /* Elimina los estilos por defecto del navegador */
-    -webkit-appearance: none; /* Para navegadores Safari y Chrome */
-    -moz-appearance: none; /* Para navegadores Firefox */
+    -webkit-appearance: none; /* Safari y Chrome */
+    -moz-appearance: none; /* Firefox */
 }
 
-/* Estilos para el select al enfocar */
+/* Efecto al enfocar el select */
 select:focus {
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/* Estilos para los option */
+/* Opciones del select */
 option {
     font-size: 1em;
     color: #495057;
     background-color: #fff;
 }
 
+/* Contenedor de botones del formulario */
 .buttons-container{
     display: flex;
     justify-content: space-between;
@@ -64,6 +68,7 @@ option {
     margin-top: 20px;
 }
 
+/* Botón principal */
 .button{
     width: 150px;
     padding: 10px;
@@ -76,22 +81,26 @@ option {
     font-weight: 500;
 }
 
+/* Efecto hover para el botón principal */
 .button:hover{
     opacity: 0.8;
 }
 
+/* Botón secundario (cancelar) */
 .button:last-child { 
     background-color: transparent;
     color: #424549;
     border: 1px solid #424549;
 }
 
+/* Lista de movimientos */
 .list {
     flex-grow: 1;
     overflow-y: auto;
     width: 400px;
 }
 
+/* Ítem individual de la lista */
 .item {
     display: flex;
     justify-content: space-between;
@@ -100,20 +109,24 @@ option {
     border-bottom: 1px solid #ddd;
 }
 
+/* Detalles del movimiento */
 .details p {
     margin: 0;
 }
 
+/* Fecha del movimiento */
 .date {
     font-size: 0.9em;
     color: #6c757d;
     margin-bottom: 5px;
 }
 
+/* Descripción del movimiento */
 .description {
     font-size: 1.1em;
 }
 
+/* Monto del movimiento */
 .amount {
     font-size: 1.2em;
     font-weight: bold;

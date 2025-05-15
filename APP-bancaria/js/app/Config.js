@@ -1,16 +1,18 @@
-import { Storage } from './LocalStorageService.js';
+import { Storage } from './LocalStorageService.js'; // Importa el servicio de almacenamiento local
 
+// Clase para actualizar la configuración del usuario
 export class Config {
+    // Actualiza el nombre del usuario
     static updateName(userId, newName) {
-        const users = Storage.get('users') || [];
-        const userIndex = users.findIndex(user => user.id === userId);
+        const users = Storage.get('users') || []; // Obtiene la lista de usuarios
+        const userIndex = users.findIndex(user => user.id === userId); // Busca el usuario por ID
 
         if (userIndex !== -1) {
-            users[userIndex].name = newName;
-            Storage.save('users', users);
+            users[userIndex].name = newName; // Actualiza el nombre
+            Storage.save('users', users); // Guarda la lista actualizada
             alert(`Nombre del usuario ${userId} actualizado a ${newName}`);
 
-            // Actualiza el currentUser si es el mismo usuario
+            // Si el usuario actualizado es el actual, actualiza también el currentUser
             const currentUser = Storage.get('currentUser');
             if (currentUser && currentUser.id === userId) {
                 currentUser.name = newName;
@@ -21,6 +23,7 @@ export class Config {
         }
     }
 
+    // Actualiza el correo electrónico del usuario
     static updateEmail(userId, newEmail) {
         const users = Storage.get('users') || [];
         const userIndex = users.findIndex(user => user.id === userId);
@@ -30,7 +33,7 @@ export class Config {
             Storage.save('users', users);
             alert(`Correo del usuario ${userId} actualizado a ${newEmail}`);
 
-            // Actualiza el currentUser si es el mismo usuario
+            // Si el usuario actualizado es el actual, actualiza también el currentUser
             const currentUser = Storage.get('currentUser');
             if (currentUser && currentUser.id === userId) {
                 currentUser.email = newEmail;
@@ -41,6 +44,7 @@ export class Config {
         }
     }
 
+    // Actualiza el teléfono del usuario
     static updatePhone(userId, newPhone) {
         const users = Storage.get('users') || [];
         const userIndex = users.findIndex(user => user.id === userId);
@@ -50,7 +54,7 @@ export class Config {
             Storage.save('users', users);
             alert(`Teléfono del usuario ${userId} actualizado a ${newPhone}`);
 
-            // Actualiza el currentUser si es el mismo usuario
+            // Si el usuario actualizado es el actual, actualiza también el currentUser
             const currentUser = Storage.get('currentUser');
             if (currentUser && currentUser.id === userId) {
                 currentUser.phone = newPhone;
@@ -61,6 +65,7 @@ export class Config {
         }
     }
 
+    // Actualiza la contraseña del usuario
     static updatePassword(userId, newPassword) {
         const users = Storage.get('users') || [];
         const userIndex = users.findIndex(user => user.id === userId);
@@ -70,7 +75,7 @@ export class Config {
             Storage.save('users', users);
             alert(`Contraseña del usuario ${userId} actualizada`);
 
-            // Actualiza el currentUser si es el mismo usuario
+            // Si el usuario actualizado es el actual, actualiza también el currentUser
             const currentUser = Storage.get('currentUser');
             if (currentUser && currentUser.id === userId) {
                 currentUser.password = newPassword;

@@ -4,70 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimientos - Ahorro a la Mano</title>
+    <!-- Estilos principales y de movimientos -->
     <link rel="stylesheet" href="css/movements.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
         <header>
+            <!-- Botón para volver atrás -->
             <div class="back-button">
                 <i class="fas fa-chevron-left"></i>
                 <span>Volver</span>
             </div>
             <div class="logo">
-                <!-- Aquí va el logo de tu aplicación -->
-                <img src="/assents/logo.jpg" alt="Logo">
+                <!-- Logo de la aplicación -->
+                <img src="/APP-bancaria/assents/logo.jpg" alt="Logo">
             </div>
         </header>
 
         <div class="information">
-                <section class="user-info">
-                    <h1> <span id="user-name">user</span></h1>
-                    <p>Bancolombia A la mano</p>
-                    <p><span id="account-number">231-******-30</span></p>
-                </section>
+            <!-- Información del usuario y saldo -->
+            <section class="user-info">
+                <h1> <span id="user-name"></span></h1>
+                <p>Bancolombia A la mano</p>
+                <p><span id="account-number"></span></p>
+            </section>
 
-                <div class="balace-movement">
-                    <p>Saldo disponible</p>
-                    <section class="balance">
-                        <p>$</p>
-                        <span id="saldo-actual">*****</span>
-                    </section>
-                </div>
+            <div class="balace-movement">
+                <p>Saldo disponible</p>
+                <section class="balance">
+                    <p>$</p>
+                    <span id="saldo-actual"></span>
+                </section>
+            </div>
         </div>
 
+        <!-- Pestañas para detalle y movimientos -->
         <section class="tabs">
             <button class="tab-button active">Detalle</button>
             <button class="tab-button">Movimientos</button>
         </section>
 
-        <section class="movements-list">
-            <div class="movement-item">
-                <div class="movement-details">
-                    <p class="movement-date">30 APR 2025</p>
-                    <p class="movement-description">IMPTO GOBIERNO 4X1000</p>
+        <!-- Lista de movimientos (se llena dinámicamente) -->
+        <section class="list">
+            <div class="item">
+                <div class="details">
+                    <p class="date">30 APR 2025</p>
+                    <p class="description">IMPTO GOBIERNO 4X1000</p>
                 </div>
-                <p class="movement-amount negative">-$ 40,00</p>
-            </div>
-
-            <div class="movement-item">
-                <div class="movement-details">
-                    <p class="movement-date">30 APR 2025</p>
-                    <p class="movement-description">TRANSF A OTROS BANCOS</p>
-                </div>
-                <p class="movement-amount negative">-$ 10.000,00</p>
-            </div>
-
-            <div class="movement-item">
-                <div class="movement-details">
-                    <p class="movement-date">29 APR 2025</p>
-                    <p class="movement-description">TRANSF A OTROS BANCOS</p>
-                </div>
-                <p class="movement-amount negative">-$ 250.000,00</p>
+                <p class="amount negative">-$ 40,00</p>
             </div>
         </section>
 
+        <!-- Footer con accesos rápidos -->
         <footer>
             <a href="shipment.html">
                 <i class="fa-solid fa-paper-plane"></i>
@@ -79,6 +70,7 @@
             </a>
         </footer>
     </div>
-    <script src="/js/UI/movements.js" type="module"></script>
+    <!-- Script principal para la lógica de movimientos -->
+    <script src="/APP-bancaria/js/UI/movements.js" type="module"></script>
 </body>
 </html>

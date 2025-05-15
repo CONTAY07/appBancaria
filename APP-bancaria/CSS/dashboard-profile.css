@@ -1,121 +1,140 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
-    display: grid;
-    place-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la fuente principal */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    background-color: #f8f9fa; /* Define el color de fondo */
+    color: #343a40; /* Define el color del texto */
+    display: grid; /* Utiliza grid para centrar el contenido */
+    place-items: center; /* Centra los elementos en el grid */
 }
 
+/* Estilos para el contenedor principal */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    max-width: 400px;
-    height: 100vh;
-    background-color: #f8f9fa;
-    border-radius: 15px;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 80%; /* Define el ancho del contenedor */
+    max-width: 400px; /* Define el ancho máximo del contenedor */
+    height: 100vh; /* Define la altura del contenedor al 100% de la ventana */
+    background-color: #f8f9fa; /* Define el color de fondo */
+    border-radius: 15px; /* Define el radio de las esquinas */
 }
 
+/* Estilos para la cabecera */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0px;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 0px; /* Elimina el margen inferior */
 }
 
+/* Estilos para los elementos de ayuda y cierre de sesión */
 .help, .logout {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    color: #6c757d;
-    cursor: pointer;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 3px; /* Define el espacio entre los elementos */
+    color: #6c757d; /* Define el color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
+/* Estilos específicos para el elemento de ayuda */
 .help{
-    background-color: #6c757d;
-    color: #fff;
-    padding: 5px;
-    border-radius: 50px;
+    background-color: #6c757d; /* Define el color de fondo */
+    color: #fff; /* Define el color del texto */
+    padding: 5px; /* Define el relleno */
+    border-radius: 50px; /* Define el radio de las esquinas para hacerlo circular */
 }
 
+/* Estilos para el span dentro del elemento de ayuda */
 .help span{
-    margin: 0px 15px;
+    margin: 0px 15px; /* Define los márgenes laterales */
 }
 
+/* Estilos para el logo */
 .logo img {
-    width: 200px;
+    width: 200px; /* Define el ancho de la imagen */
 }
 
+/* Estilos para los iconos en la cabecera */
 header i {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Define el tamaño de la fuente */
 }
 
+/* Estilos para la sección de información del usuario */
 .information {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 20px; /* Define el margen inferior */
 }
 
+/* Estilos para la información del usuario */
 .user-info h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
+    font-size: 2em; /* Define el tamaño de la fuente */
+    margin-bottom: 5px; /* Define el margen inferior */
 }
 
+/* Estilos para los párrafos en la información del usuario */
 .user-info p {
-    color: #6c757d;
-    margin-bottom: 10px;
+    color: #6c757d; /* Define el color del texto */
+    margin-bottom: 10px; /* Define el margen inferior */
 }
 
+/* Estilos para los detalles de la cuenta */
 .user-info .account-details {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.1em;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Define el espacio entre los elementos */
+    font-size: 1.1em; /* Define el tamaño de la fuente */
 }
 
+/* Estilos para los iconos en los detalles de la cuenta */
 .user-info .account-details i {
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
+/* Estilos para la sección de balance y movimientos */
 .balace-movement{
-    margin-top: 155px;
+    margin-top: 155px; /* Define el margen superior */
 }
 
+/* Estilos para el balance */
 .balance {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 10px;
-    font-size: 1.1em;
-    margin-bottom: 10px;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: right; /* Alinea los elementos a la derecha */
+    gap: 10px; /* Define el espacio entre los elementos */
+    font-size: 1.1em; /* Define el tamaño de la fuente */
+    margin-bottom: 10px; /* Define el margen inferior */
 }
 
+/* Estilos para los párrafos en el balance */
 .balance p {
-    color: #6c757d;
+    color: #6c757d; /* Define el color del texto */
 }
 
+/* Estilos para los iconos en el balance */
 .balance i {
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
+/* Estilos para los detalles de los movimientos */
 .details-movements a {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 5px;
-    color: #6c757d;
-    text-decoration: none;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: right; /* Alinea los elementos a la derecha */
+    gap: 5px; /* Define el espacio entre los elementos */
+    color: #6c757d; /* Define el color del texto */
+    text-decoration: none; /* Elimina la decoración del texto */
 }
 
+/* Estilos para la sección de acciones */
 .actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
     margin: 20px 0; /* Agregado margen superior e inferior */
     padding: 50px; /* Reducido el padding */
     background-color: #f8f9fa; /* Cambiado el color de fondo */
@@ -123,268 +142,303 @@ header i {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Agregada sombra suave */
 }
 
+/* Estilos para el título en la sección de acciones */
 .actions h2 {
     font-size: 1.1em; /* Aumentado el tamaño de la fuente */
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Define el margen inferior */
     color: #6c757d; /* Cambiado el color del texto */
-    font-weight: normal;
+    font-weight: normal; /* Define el peso de la fuente */
 }
 
+/* Estilos para la grilla de acciones */
 .actions-grid {
-    display: grid;
+    display: grid; /* Utiliza grid para organizar los elementos */
     grid-template-columns: repeat(3, 1fr); /* Cambiado a 3 columnas */
     gap: 20px; /* Aumentado el espacio entre elementos */
     padding: 20px; /* Aumentado el padding */
-    background-color: #fff;
+    background-color: #fff; /* Define el color de fondo */
     border-radius: 15px; /* Agregado borde redondeado */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Agregada sombra suave */
 }
 
+/* Estilos para los enlaces en la grilla de acciones */
 .actions .actions-grid a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-decoration: none; /* Elimina la decoración del texto */
     color: #495057; /* Cambiado el color del texto */
     border-radius: 15px; /* Agregado borde redondeado */
     padding: 15px; /* Aumentado el padding */
-    text-align: center;
+    text-align: center; /* Centra el texto */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Agregada transición */
 }
 
+/* Estilos para los enlaces en la grilla de acciones al pasar el cursor */
 .actions .actions-grid a:hover {
     background-color: #e9ecef; /* Cambiado el color de fondo al pasar el cursor */
     transform: scale(1.05); /* Agregado efecto de escala al pasar el cursor */
 }
 
+/* Estilos para los iconos en la grilla de acciones */
 .actions .actions-grid i {
     font-size: 1.2em; /* Aumentado el tamaño del icono */
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* Define el margen inferior */
 }
 
+/* Estilos para el pie de página */
 footer {
-    display: grid;
-    place-items: center;
-    margin-top: auto;
-    padding: 20px;
-    width: 500px;
-    border-top: 1px solid #ddd;
-    box-shadow:0 12px 0  rgba(0, 0, 0, 0.07);
+    display: grid; /* Utiliza grid para centrar el contenido */
+    place-items: center; /* Centra los elementos en el grid */
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+    padding: 20px; /* Define el relleno */
+    width: 500px; /* Define el ancho */
+    border-top: 1px solid #ddd; /* Define el borde superior */
+    box-shadow:0 12px 0  rgba(0, 0, 0, 0.07); /* Define la sombra */
 }
 
+/* Estilos para la navegación en el pie de página */
 footer nav {
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-    gap: 5px;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    width: 500px; /* Define el ancho */
+    gap: 5px; /* Define el espacio entre los elementos */
 }
 
+/* Estilos para los elementos de navegación al pasar el cursor */
 .nav-item:hover{
-    color: #ffc107;
+    color: #ffc107; /* Cambia el color del texto al pasar el cursor */
 }
 
+/* Estilos para los spans en la navegación del pie de página */
 footer nav span{
-    font-size: 0.9em;
+    font-size: 0.9em; /* Define el tamaño de la fuente */
 }
+/* Estilos para la clase activa */
 .active {
-    background-color: #ffc107;
-    color: #fff;
+    background-color: #ffc107; /* Define el color de fondo */
+    color: #fff; /* Define el color del texto */
 }
+/* Estilos para la clase activa al pasar el cursor */
 .active:hover {
-    background-color: #ffc107;
-    color: #fff;
+    background-color: #ffc107; /* Define el color de fondo */
+    color: #fff; /* Define el color del texto */
 }
 
+/* Estilos para los iconos en la navegación del pie de página */
 footer nav i {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    font-size: 1.2em; /* Define el tamaño de la fuente */
+    margin-bottom: 5px; /* Define el margen inferior */
 }
 
+/* Estilos para los elementos de navegación */
 .nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #6c757d;
-    text-align: center;
-    padding: 10px 20px;
-    cursor: pointer;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-decoration: none; /* Elimina la decoración del texto */
+    color: #6c757d; /* Define el color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px 20px; /* Define el relleno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
     position: relative; /* Añade position: relative; */
 }
 
+/* Estilos para las acciones de dinero */
 .money-actions, .bills-actions {
-    position: absolute;
+    position: absolute; /* Posicionamiento absoluto */
     top: -470%; /* Cambia bottom por top */
     left: 50%; /* Centra horizontalmente */
     transform: translateX(-50%); /* Centra horizontalmente */
-    width: 300px;
-    display: flex;
-    background-color: #ffc107;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: left;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    display: none;
+    width: 300px; /* Define el ancho */
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    background-color: #ffc107; /* Define el color de fondo */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 20px; /* Define el espacio entre los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: left; /* Alinea los elementos a la izquierda */
+    padding: 20px; /* Define el relleno */
+    margin-bottom: 20px; /* Define el margen inferior */
+    border-radius: 15px; /* Define el radio de las esquinas */
+    display: none; /* Oculta el elemento por defecto */
     z-index: 1; /* Asegura que esté por encima de otros elementos */
 }
+/* Estilos para las acciones de facturas */
 .bills-actions{
-    top: -210%;
+    top: -210%; /* Define la posición superior */
 }
 
+/* Estilos para los enlaces en las acciones de dinero y facturas */
 .money-actions a, .bills-actions a {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    justify-items: center;
-    color: #495057;
-    gap: 20px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 15px;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    text-decoration: none; /* Elimina la decoración del texto */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-items: center; /* Centra los elementos */
+    color: #495057; /* Define el color del texto */
+    gap: 20px; /* Define el espacio entre los elementos */
+    height: 50px; /* Define la altura */
+    padding: 10px; /* Define el relleno */
+    border-radius: 15px; /* Define el radio de las esquinas */
 
 }
 
+/* Estilos para los enlaces en las acciones de facturas */
 .bills-actions a{
-    gap: 10px;
+    gap: 10px; /* Define el espacio entre los elementos */
 }
 
+/* Estilos para los enlaces en las acciones de dinero y facturas al pasar el cursor */
 .money-actions a:hover, .bills-actions a:hover {
-    background-color: #ddd;
-    color: #343a40;
-    opacity: 0.7;
+    background-color: #ddd; /* Cambia el color de fondo al pasar el cursor */
+    color: #343a40; /* Cambia el color del texto al pasar el cursor */
+    opacity: 0.7; /* Define la opacidad */
 }
 
+/* Estilos para los spans en los enlaces de las acciones de dinero y facturas */
 .money-actions a span, .bills-actions a span {
-    font-size: 1.2em;
-    margin-bottom: 0;
-    font-weight: 600;
-    text-align: left;
-    margin: 0;
+    font-size: 1.2em; /* Define el tamaño de la fuente */
+    margin-bottom: 0; /* Elimina el margen inferior */
+    font-weight: 600; /* Define el peso de la fuente */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina los márgenes */
 }
 
+/* Estilos para los párrafos en los enlaces de las acciones de dinero */
 .money-actions a p{
-    font-size: 0.8em;
-    margin-top: 0;
+    font-size: 0.8em; /* Define el tamaño de la fuente */
+    margin-top: 0; /* Elimina el margen superior */
 }
 
+/* Muestra las acciones de dinero al pasar el cursor sobre el elemento de navegación */
 .nav-item:hover .money-actions {
-    display: block;
+    display: block; /* Muestra el elemento */
 }
+/* Muestra las acciones de facturas al pasar el cursor sobre el elemento de navegación */
 .nav-item:hover .bills-actions {
-    display: block;
+    display: block; /* Muestra el elemento */
 }
 
 /* Estilos para la sección profile-page */
 .profile-page {
-    width: 100%;
-    display: grid;    
-    place-items: center;
-    margin: 20px 0;
-    padding: 40px;
-    background-color: #f8f9fa;
-    border-radius: 15px;
-    text-align: center;
+    width: 100%; /* Define el ancho al 100% */
+    display: grid;    /* Utiliza grid para centrar el contenido */
+    place-items: center; /* Centra los elementos en el grid */
+    margin: 20px 0; /* Define los márgenes superior e inferior */
+    padding: 40px; /* Define el relleno */
+    background-color: #f8f9fa; /* Define el color de fondo */
+    border-radius: 15px; /* Define el radio de las esquinas */
+    text-align: center; /* Centra el texto */
 }
 
+/* Estilos para el logo en la sección profile-page */
 .profile-page .logo img {
-    width: 150px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Define el ancho de la imagen */
+    margin-bottom: 20px; /* Define el margen inferior */
+    border-radius: 50%; /* Define el radio de las esquinas para hacerlo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Define la sombra */
 }
 
+/* Estilos para el título en la sección profile-page */
 .profile-page h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #495057;
-    margin-top: -20px;
+    font-size: 2em; /* Define el tamaño de la fuente */
+    margin-bottom: 10px; /* Define el margen inferior */
+    color: #495057; /* Define el color del texto */
+    margin-top: -20px; /* Define el margen superior */
 }
 
+/* Estilos para la sección name-id */
 .name-id{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    width: 360px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 5px; /* Define el espacio entre los elementos */
+    width: 360px; /* Define el ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Define la sombra */
 }
 
+/* Estilos para el título en la sección name-id */
 .name-id h2 {
-    font-size: 1.3em;
-    margin-bottom: 5px;
-    color: #495057;
+    font-size: 1.3em; /* Define el tamaño de la fuente */
+    margin-bottom: 5px; /* Define el margen inferior */
+    color: #495057; /* Define el color del texto */
 }
 
+/* Estilos para los párrafos en la sección name-id */
 .name-id p {
-    font-size: 0.9em;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    color: #6c757d;
+    font-size: 0.9em; /* Define el tamaño de la fuente */
+    margin-bottom: 5px; /* Define el margen inferior */
+    margin-top: 0px; /* Elimina el margen superior */
+    color: #6c757d; /* Define el color del texto */
 }
 
+/* Estilos para la información del perfil en la sección profile-page */
 .profile-page .profile-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #495057;
-    width: 100%;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    color: #495057; /* Define el color del texto */
+    width: 100%; /* Define el ancho al 100% */
 
 }
 
+/* Estilos para los detalles del perfil en la sección profile-page */
 .profile-page .profile-details {
-    display: flex;
-    flex-direction: column;
-    align-items:left;
-    gap: 10px;
-    margin-bottom: 20px;
-    text-align: left;
-    width: 80%;
-    margin: 20px;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items:left; /* Alinea los elementos a la izquierda */
+    gap: 10px; /* Define el espacio entre los elementos */
+    margin-bottom: 20px; /* Define el margen inferior */
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 80%; /* Define el ancho al 80% */
+    margin: 20px; /* Define los márgenes */
 }
 
+/* Estilos para los datos en los detalles del perfil */
 .profile-page .profile-details .data {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #6c757d;
+    font-size: 1.2em; /* Define el tamaño de la fuente */
+    margin-bottom: 10px; /* Define el margen inferior */
+    color: #6c757d; /* Define el color del texto */
 }
 
+/* Estilos para los párrafos en los detalles del perfil */
 .profile-page .profile-details p {
-    font-size: 1em;
-    margin-bottom: 5px;
-    color: #495057;
+    font-size: 1em; /* Define el tamaño de la fuente */
+    margin-bottom: 5px; /* Define el margen inferior */
+    color: #495057; /* Define el color del texto */
 }
 
+/* Estilos para los párrafos en negrita en los detalles del perfil */
 .profile-page .profile-details p strong {
-    font-weight: bold;
-    margin-right: 5px;
+    font-weight: bold; /* Define el peso de la fuente */
+    margin-right: 5px; /* Define el margen derecho */
 }
+/* Estilos para las acciones del perfil */
 .actions-profile{
-    width: 100%;
+    width: 100%; /* Define el ancho al 100% */
 }
 
+/* Estilos para los botones en las acciones del perfil */
 .actions-profile button {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 30px;
-    background-color: transparent;
-    color: #495057;
-    border: 1px solid #495057;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
+    display: block; /* Muestra el elemento como bloque */
+    width: 100%; /* Define el ancho al 100% */
+    text-align: center; /* Centra el texto */
+    padding: 12px 24px; /* Define el relleno */
+    border: none; /* Elimina el borde */
+    border-radius: 30px; /* Define el radio de las esquinas */
+    background-color: transparent; /* Define el color de fondo como transparente */
+    color: #495057; /* Define el color del texto */
+    border: 1px solid #495057; /* Define el borde */
+    font-weight: bold; /* Define el peso de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Define la transición */
+    margin-top: 10px; /* Define el margen superior */
 }
 
+/* Estilos para los botones en la sección profile-page al pasar el cursor */
 .profile-page button:hover {
-    opacity: 0.8;
+    opacity: 0.8; /* Define la opacidad */
 }
 
 
@@ -393,8 +447,8 @@ footer nav i {
     display: none; /* Oculta el modal por defecto */
     position:fixed; /* Posición fija para que cubra toda la pantalla */
     z-index: 1; /* Asegura que esté por encima de otros elementos */
-    left: 0;
-    top: 0;
+    left: 0; /* Define la posición izquierda */
+    top: 0; /* Define la posición superior */
     width: 100%; /* Ancho completo */
     height: 100%; /* Alto completo */
     overflow: auto; /* Permite el desplazamiento si el contenido es demasiado largo */
@@ -403,69 +457,74 @@ footer nav i {
 
 /* Estilos para el contenido del modal */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fefefe; /* Define el color de fondo */
     margin: 15% auto; /* Centra verticalmente y horizontalmente */
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 20px; /* Define el relleno */
+    border: 1px solid #888; /* Define el borde */
     width: 80%; /* Ancho del contenido */
     max-width: 600px; /* Ancho máximo del contenido */
-    border-radius: 10px;
-    position: relative;
+    border-radius: 10px; /* Define el radio de las esquinas */
+    position: relative; /* Define la posición como relativa */
 }
 
 /* Estilos para el botón de cerrar */
 .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 10px;
-    cursor: pointer;
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Define la posición superior */
+    right: 0; /* Define la posición derecha */
+    color: #aaa; /* Define el color del texto */
+    font-size: 28px; /* Define el tamaño de la fuente */
+    font-weight: bold; /* Define el peso de la fuente */
+    padding: 10px; /* Define el relleno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
+/* Estilos para el botón de cerrar al pasar el cursor o enfocar */
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: black; /* Cambia el color del texto */
+    text-decoration: none; /* Elimina la decoración del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
 /* Estilos para los formularios */
 .modal-content form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
 }
 
+/* Estilos para las etiquetas en los formularios */
 .modal-content label {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-top: 10px; /* Define el margen superior */
+    margin-bottom: 5px; /* Define el margen inferior */
+    font-weight: bold; /* Define el peso de la fuente */
 }
 
+/* Estilos para los campos de texto, email, teléfono y contraseña en los formularios */
 .modal-content input[type="text"],
 .modal-content input[type="email"],
 .modal-content input[type="tel"],
 .modal-content input[type="password"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
+    padding: 10px; /* Define el relleno */
+    margin-bottom: 15px; /* Define el margen inferior */
+    border: 1px solid #ccc; /* Define el borde */
+    border-radius: 5px; /* Define el radio de las esquinas */
+    font-size: 1em; /* Define el tamaño de la fuente */
 }
 
+/* Estilos para los botones de tipo submit en los formularios */
 .modal-content button[type="submit"] {
-    background-color: #ffc107;
-    color: #212529;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    background-color: #ffc107; /* Define el color de fondo */
+    color: #212529; /* Define el color del texto */
+    padding: 12px 20px; /* Define el relleno */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Define el radio de las esquinas */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-weight: bold; /* Define el peso de la fuente */
+    transition: background-color 0.3s ease; /* Define la transición */
 }
 
+/* Estilos para los botones de tipo submit en los formularios al pasar el cursor */
 .modal-content button[type="submit"]:hover {
-    background-color: #ffca2b;
+    background-color: #ffca2b; /* Cambia el color de fondo al pasar el cursor */
 }
